@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Justiça do trabalho</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css\estilourna.css">
+	<script src = "https://code.iconify.design/2/2.0.3/iconify.min.js"> </script>
+</head>
+<body>
+	<div id="parte1">
+		<div><img src="http://universidadepatativa.com/wp-content/uploads/2016/04/brasao_republica_vetor-427x400.gif" height="133" width="142">
+		</div>
+
+	<div id="nav">
+		<h1>Bem vinda (o) a urna eletrônica da Justiça Eleitoral</h1>
+		<input type="submit" value="Votar" id="votar" onclick="mostrar('dados')">
+		<input type="submit" value="Resultados" id="resultado" onclick= "mostrar('result')">
+	</div>
+
+	<div>
+		<form name="dados" id="dados">
+			
+			 <label for="text"><strong>Nome:</strong></label><br>
+             <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+             <br><label for="text"><strong>Título de eleitor: </strong></label><br>
+             <input type="text" name="titulo" id="titulo" placeholder="Número de eleitor" required> <br>
+
+             <input type="submit" name="enviar" value="Enviar" id="enviar" onclick="mostrar_urna('parte2', 'dados', event)">
+         </form>
+
+		</div>
+
+		<div>
+			<h1 id="result">Resultado das eleições</h1>
+			<div id="mostraresultado"></div>
+		</div>
+
+	</div>
+<div id="parte2">
+
+		<div>
+		<h1> Olá, você esta na página de votação.</h1>
+		</div>
+
+		<div class="menu">
+		<div class="tela">
+                        <label id="dig1"></label>
+                        <label id="dig2"></label>
+                        <div id="mostracandidato"></div>
+                        <div id="imagem"></div>
+		</div>
+
+       <div>
+            <h1 class="titulo">Justiça <br> Eleitoral</h1>
+        </div>
+
+		<div class="teclado">
+			<button class="bnt">1</button>
+            <button class="bnt">2</button>
+            <button class="bnt">3</button>
+            <button class="bnt">4</button>
+            <button class="bnt">5</button>
+            <button class="bnt">6</button>
+            <button class="bnt">7</button>
+            <button class="bnt">8</button>
+            <button class="bnt">9</button>
+            <button class="bnt">0</button>
+
+                    <div class="teclado2">
+                        <button id="branco">BRANCO</button>
+                        <button id="corrige">CORRIGE</button>
+                        <button id="confirma">CONFIRMA</button>
+                    </div>
+
+	</div>
+	</div>
+	<div id="parte 3"> </div>
+	<script type="text/javascript" src="js/scripturna.js"></script>
+</body>
+
+</html>
+
